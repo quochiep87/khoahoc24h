@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> ngoaingu24h.vn </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="js/ket-qua.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+	<link rel="stylesheet" href="style/ket-qua.css">
+	<link rel="stylesheet" href="fonts/fontawesome-free-5.13.0-web/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+<!-- header -->
+<header class="header">	
+	<nav class="header_topnavbar">
+		<div class="grid">
+			<ul class="header_topnavbar-list">
+				<li class="header_topnavbar-item">
+					<a href="tel:0989924488" class="header_topnavbar-item-link">
+						<i class="fas fa-phone-alt"></i>
+						Hotline: 0989924488
+					</a>	
+				</li>
+				<li class="header_topnavbar-item">
+					<a href="mailto:hotrokythuat.ngoaingu24h@gmail.com" class="header_topnavbar-item-link">
+						<i class="fas fa-envelope"></i>
+						Email: hotrokythuat.ngoaingu24h@gmail.com
+					</a>	
+				</li>
+				<li class="header_topnavbar-item">
+					<i class="fas fa-globe"></i>
+					<span class="header_topnavbar-no-pointer">Ngôn ngữ:</span>
+				</li>
+				<li class="header_topnavbar-item">
+					<div class="dropdown dropdown-language-panel">
+						<button class="dropdown-toggle" type="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<img class=img-flag src="../khoa-hoc/images/vietnam-flag-resize.png"><span
+								class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li onclick="onChangelanguage(this,'vn')" class="vietnam active">
+								<img class="img-vn" src="../khoa-hoc/images/vietnam-flag-resize.png" alt="">
+								Tiếng Việt
+							</li>
+							<li onclick="onChangelanguage(this,'en')" class="england">
+								<img class="img-eng" src="../khoa-hoc/images/england-flag-resize.png" alt="">
+								Tiếng Anh
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul class="header_topnavbar-list">
+				<li class="header_topnavbar-item">
+					<a href="" class="header_topnavbar-item-link">Thi thử THPT</a> 
+				</li>
+				<li class="header_topnavbar-item"><i class="fas fa-shopping-cart"></i></li>
+				<li class="header_topnavbar-item signIn">
+					<i class="fas fa-user-circle"></i>
+					Đăng nhập
+				</li>
+				<li class="header_topnavbar-item">Đăng ký</li>
+			</ul>
+		</div>
+		
+	</nav>
+
+	<nav class="header_navbar">
+		<div class="grid">
+			<ul class="header_navbar-list">
+				<li class="header_navbar-item">
+					<a href=""><img src="./images/logo.PNG" alt="logo" class="header_navbar-logo"></a>
+				</li>
+				<li class="header_navbar-item">
+					<form class="form-inline">
+						<input class="header_navbar-input" type="search" placeholder="Tìm kiếm" aria-label="Search">
+						<button class="btn-search" type="submit">
+							<i class="search-icon fas fa-search"></i>
+						</button>
+					  </form>
+				</li>
+			</ul>
+			<nav class="header_subnavbar">
+				<ul class="header_subnavbar-list nav justify-content-center">
+					<li class="header_subnavbar-item nav-item">
+					  <a class="header_subnavbar-item-link" href="#">Trang chủ</a>
+					</li>
+					<li class="header_subnavbar-item">
+						<a href="" class="header_subnavbar-item-link" >Khóa học</a>
+						<div class="header_subnavbar-panel allcourse-menu">
+							<ul class="header_subnavbar-menu ">
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Luyện thi cấp tốc</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Luyện thi học sinh giỏi</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Ngữ pháp tiếng anh căn bản</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Combo luyện thi THPT</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					
+					<li class="header_subnavbar-item">
+						<a href="" class="header_subnavbar-item-link">Tin tức</a>
+						<div class="header_subnavbar-panel  news-menu">
+							<ul class="header_subnavbar-menu">
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 1</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 2</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 3</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="header_subnavbar-item">
+					  <a class="header_subnavbar-item-link" href="#">Liên hệ</a>
+					</li>
+					<li class="header_subnavbar-item">
+						<a class="header_subnavbar-item-link start-course" href="#">Kích hoạt khóa học</a>
+					  </li>
+				  </ul>
+			</nav>
+		</div>					
+	</nav>
+</header>
+<!--end-header-->
+
+	<!--breadcrumb-->
+	<div id="breadcrumb">
+		<div class="grid">
+			<div class="container br">	
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-item-link" href="#">Trang chủ</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-item-link" href="#">Danh mục khóa học</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-item-link" href="#">(UNLIMITED) Kho đề thi thử THPTQG từ các trường toàn quốc</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">
+							<a class="breadcrumb-item-link" href="#">Đề 3 thi thử môn Tiếng Anh THPTQG Chuyên Vinh lần 1 2019</a>
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</div>	
+	</div>
+	<!--end-breadcumb-->
+	
+	<!-- main-content -->
+	<div class="general_info">
+
+	</div>
+	<!-- end-main-content -->
+	<!--footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="info">
+							<div class="col-lg-12">
+								<i class="info_footer-item fas fa-map-marker-alt"></i>
+								Tầng 5, Số 52 Chùa Hà, Quan Hoa, Cầu Giấy, Hà Nội<br>
+								<i class="info_footer-item fa fa-envelope"></i>
+								hotrokythuat.ngoaingu24h@gmail.com<br>
+								<i class="info_footer-item fa fa-phone"></i>
+								0989924488
+								<p>Công ty TNHH Giáo dục Wordington
+									MST: 0108433619 do Sở kế hoạch và đầu tư Thành phố Hà Nội cấp lần đầu ngày
+									14/09/2018
+									Địa chỉ: Tầng 5, số 52 phố Chùa Hà, Phường Quan Hoa, Quận Cầu Giấy, Thành phố Hà Nội
+								</p>
+								<div class="social">
+									<strong>Kết nối với chúng tôi</strong><a href="#"><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer-menu">
+							<div class="col-lg-12">
+								<ul class="footer_navbar">
+									<li class="footer_navbar-title"><strong>TIỆN ÍCH</strong></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Trang chủ</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Giới thiệu</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Khóa học</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="tin-tuc.html">Tin tức</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Liên hệ</a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="privacy">
+							<div class="col-lg-12">
+								<ul class="footer_navbar">
+									<li class="footer_navbar-title"><strong>CÁC CHÍNH SÁCH</strong></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Chính sách chung</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Chính sách bảo mật thông tin</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Hướng dẫn mua hàng</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Hướng dẫn kích hoạt khóa học</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Chính sách hoàn trả học phí</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+<!-- Modal layout -->
+<div class="modal">	
+	<div class="modal_overlay"></div>
+	<div class="modal_body">
+			<div class="auth_form">
+				<div class="form-close">
+					<i class="fas fa-times"></i>
+				</div>
+					<h3 class="auth_form-heading">Đăng nhập</h3>
+				<div class="auth_form-form">
+					<div class="auth_form-group">
+						<input type="text" class="auth_form-input" placeholder="Tên tài khoản đăng nhập (*)">
+					</div>
+					<div class="auth_form-group">
+						<input type="password" class="auth_form-input" placeholder="Mật khẩu (*)">
+					</div>
+					<div class="auth_form-forget-password">
+						<a href="" class="auth_form-forget-password-link">
+							Quên mật khẩu
+						</a>
+					</div>
+					
+					<button class="btn btn-login">Đăng nhập</button>
+					<p class="auth_form-social-login">
+						Hoặc đăng nhập bằng
+					</p>
+					<button class="btn btn-fb-login">
+						<i  class="fab fa-facebook-f fb-icon"></i>
+						Facebook
+					</button>
+					<p class="auth_form-singup">
+						Không có tài khoản? <a href="">đăng ký ngay</a>
+					</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

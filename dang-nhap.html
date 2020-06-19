@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> ngoaingu24h.vn </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="dang-nhap.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+	<link rel="stylesheet" href="fonts/fontawesome-free-5.13.0-web/css/all.min.css">
+	<link rel="stylesheet" href="style/dang-nhap.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<nav class="header_topnavbar">
+				<div class="grid">
+					<ul class="header_topnavbar-list">
+						<li class="header_topnavbar-item">
+							<a href="tel:0989924488" class="header_topnavbar-item-link">
+								<i class="fas fa-phone-alt"></i>
+								Hotline: 0989924488
+							</a>
+						</li>
+						<li class="header_topnavbar-item">
+							<a href="mailto:hotrokythuat.ngoaingu24h@gmail.com" class="header_topnavbar-item-link">
+								<i class="fas fa-envelope"></i>
+								Email: hotrokythuat.ngoaingu24h@gmail.com
+							</a>
+						</li>
+						<li class="header_topnavbar-item">
+							<i class="fas fa-globe"></i>
+							<span class="header_topnavbar-no-pointer">Ngôn ngữ:</span>
+						</li>
+						<li class="header_topnavbar-item">
+							<div class="dropdown dropdown-language-panel">
+								<button class="dropdown-toggle" type="button" data-toggle="dropdown"
+									aria-expanded="false">
+									<img class=img-flag src="../khoa-hoc/images/vietnam-flag-resize.png"><span
+										class="caret"></span>
+								</button>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li onclick="onChangelanguage(this,'vn')" class="vietnam active">
+										<img class="img-vn" src="../khoa-hoc/images/vietnam-flag-resize.png" alt="">
+										Tiếng Việt
+									</li>
+									<li onclick="onChangelanguage(this,'en')" class="england">
+										<img class="img-eng" src="../khoa-hoc/images/england-flag-resize.png" alt="">
+										Tiếng Anh
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<ul class="header_topnavbar-list">
+						<li class="header_topnavbar-item">
+							<a href="" class="header_topnavbar-item-link">Thi thử THPT</a>
+						</li>
+						<li class="header_topnavbar-item"><i class="fas fa-shopping-cart"></i></li>
+						<li class="header_topnavbar-item"><i class="far fa-bell"></i></li>
+						<li class="header_topnavbar-item">
+							<img class="header_avatar" src="../khoa-hoc/images/default_avatar.png" alt="">
+						</li>
+						<div class="dropdown-content">
+							<div class="signed-in-form">
+								<div class="avatar-user">
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-sm-4 avatar">
+												<img class="avatar-img" src="../khoa-hoc/images/default_avatar.png"
+													alt="">
+											</div>
+											<div class="col-sm-8 user-name">
+												<p>hiepnq</p>
+												<p>hiepnq@gmail.com</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<ul class="list-group private-info">
+									<li class="list-group-item"><i
+											class="list-group-item-icon fas fa-exchange-alt"></i><a href="#">Lịch Sử
+											Giao Dịch</a></li>
+									<li class="list-group-item"><i class="list-group-item-icon fa fa-user"></i><a
+											href="#">Khóa Học Của Tôi</a></li>
+									<li class="list-group-item"><i
+											class="list-group-item-icon fa fa-pencil-square-o"></i><a href="#">Sửa Thông
+											Tin</a></li>
+									<li class="list-group-item"><i
+											class="list-group-item-icon fas fa-sign-out-alt"></i><a href="#">Đăng
+											Xuất</a></li>
+
+								</ul>
+							</div>
+						</div>
+					</ul>
+				</div>
+
+			</nav>
+
+
+
+
+
+
+			<!--end-nav-->
+
+			<nav class="header_navbar">
+				<div class="grid">
+					<ul class="header_navbar-list">
+						<li class="header_navbar-item">
+							<a href=""><img src="./images/logo.PNG" alt="logo" class="header_navbar-logo"></a>
+						</li>
+						<li class="header_navbar-item">
+							<form class="form-inline">
+								<input class="header_navbar-input" type="search" placeholder="Tìm kiếm"
+									aria-label="Search">
+								<button class="btn-search" type="submit">
+									<i class="search-icon fas fa-search"></i>
+								</button>
+							</form>
+						</li>
+					</ul>
+					<nav class="header_subnavbar">
+						<ul class="header_subnavbar-list nav justify-content-center">
+							<li class="header_subnavbar-item nav-item">
+								<a class="header_subnavbar-item-link" href="#">Trang chủ</a>
+							</li>
+							<li class="header_subnavbar-item">
+								<a href="" class="header_subnavbar-item-link">Khóa học</a>
+								<div class="header_subnavbar-panel allcourse-menu">
+									<ul class="header_subnavbar-menu ">
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Luyện thi cấp tốc</a>
+										</li>
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Luyện thi học sinh
+												giỏi</a>
+										</li>
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Ngữ pháp tiếng anh căn
+												bản</a>
+										</li>
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Combo luyện thi THPT</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="header_subnavbar-item">
+								<a href="" class="header_subnavbar-item-link">Tin tức</a>
+								<div class="header_subnavbar-panel  news-menu">
+									<ul class="header_subnavbar-menu">
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Tin tức 1</a>
+										</li>
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Tin tức 2</a>
+										</li>
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Tin tức 3</a>
+										</li>
+										<li class="header_subnavbar-menu-item">
+											<a class="header_subnavbar-menu-item-link" href="#">Tin tức 4</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header_subnavbar-item">
+								<a class="header_subnavbar-item-link" href="#">Liên hệ</a>
+							</li>
+							<li class="header_subnavbar-item">
+								<a class="header_subnavbar-item-link start-course" href="#">Kích hoạt khóa học</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+			<!--end-nav-->
+		</div>
+		<!--end-header-->
+
+		<!--breadcrumb-->
+	<div id="breadcrumb">
+		<div class="grid">
+			<div class="container br">	
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-item-link" href="#">Trang chủ</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">
+							<a class="breadcrumb-item-link" href="#">Khóa học</a>
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</div>	
+	</div>
+
+	<!--end-breadcumb-->
+
+
+									<!--filter-->
+
+	<div id="filter">
+		<div class="container">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-3 filter-item">
+								<div class="filter-result">
+									<a href=""><i class="fa fa-filter"></i></a>
+									<span>Lọc kết quả</span>
+								</div>
+							</div>
+							<div class="col-lg-3 filter-item">
+								<input class="filter-item-input" type="checkbox" name="free" id="free">
+								<strong>Miễn phí</strong>
+							</div>
+							<div class="col-lg-3 filter-item">
+								<input class="filter-item-input" type="checkbox" name="promotion" id="promotion">
+								<strong>Khuyến mãi</strong>
+							</div>
+							<div class="col-lg-3 filter-item">
+								<div class="arrange">
+									<strong>Sắp xếp</strong>
+									<select name="sap-xep" id="sap-xep">
+										<option value="Choose" selected>Chọn sắp xếp</option>
+										<option value="New">Mới nhất</option>
+										<option value="Label">Theo tên</option>
+										<option value="Price">Theo giá</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-filter-->
+
+	<!--content-->
+	<div id="content">
+		<div class="container">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-3 left-menu">
+						<ul class="list-group">
+							<li class="list-group-item title"><i class="fa fa-bars"></i><strong>Danh mục khóa học</strong>
+							</li>
+							<li class="list-group-item active"><a class="list-group-item-link href="#">TẤT CẢ KHOÁ HỌC</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">COMBO LUYỆN THI THPTQG CẤP TỐC (MỤC TIÊU 8-9
+									ĐIỂM)</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">COMBO MẤT GỐC TIẾNG ANH ( MỤC TIÊU 5 ĐIỂM)</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">BỨT PHÁ ĐIỂM THI TIẾNG ANH VÀO 10</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">LUYỆN THI THPTQG- PRO3M- MỤC TIÊU 8 ĐIỂM (2021)</a>
+							</li>
+							<li class="list-group-item"><a class="list-group-item-link href="">LUYỆN THI THPTQG- PRO3M PLUS- MỤC TIÊU 9-10 ĐIỂM
+									(2021)</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">TIẾNG ANH CĂN BẢN - GIAO TIẾP</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">LUYỆN THI IELTS - DU HỌC</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">LUYỆN THI TOEIC- 4 KỸ NĂNG</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">CÁC KHÓA HỌC TẶNG KÈM</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">KHOÁ HỌC TIẾNG TRUNG</a></li>
+							<li class="list-group-item"><a class="list-group-item-link href="">KHOÁ HỌC TIẾNG NHẬT</a></li>
+						</ul>
+					</div>
+					<!--end-left-menu-->
+
+					<div class="col-lg-9 main-content">
+						<strong>Tất cả khóa học <span class="main-content-title">(45 khóa học)</span></strong>
+						<div class="row">
+							<div class="col-lg-12 col-xs-6 box">
+								<div class="row">
+									<div class="col-lg-4 course-item">
+										<div class="card">
+											<div id="overlay">
+												<button class="card-price">200.000 VND</button>
+												<img class="card-img-top" src="../khoa-hoc/images/course.jpg" alt="">
+												<div class="btn-group">
+													<a href="chi-tiet-khoa-hoc.html"><button class="btn-outline">XEM NHANH</button></a>
+													<a href=""><button class="btn-warning">MUA NGAY</button></a>
+												</div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Tuyển tập 250 Câu Dễ Nhầm Lẫn</h5>
+												<p class="card-text">Some quick example text to build on the card title
+													and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary"><i class="fa fa-user"></i>350 Học
+													viên</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 course-item">
+										<div class="card">
+											<div id="overlay">
+												<button class="card-price">200.000 VND</button>
+												<img class="card-img-top" src="../khoa-hoc/images/course.jpg" alt="">
+												<div class="btn-group">
+													<a href="#"><button class="btn-outline">XEM NHANH</button></a>
+													<a href=""><button class="btn-warning">MUA NGAY</button></a>
+												</div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Tuyển tập 250 Câu Dễ Nhầm Lẫn</h5>
+												<p class="card-text">Some quick example text to build on the card title
+													and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary"><i class="fa fa-user"></i>350 Học
+													viên</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 course-item">
+										<div class="card">
+											<div id="overlay">
+												<button class="card-price">200.000 VND</button>
+												<img class="card-img-top" src="../khoa-hoc/images/course.jpg" alt="">
+												<div class="btn-group">
+													<a href="#"><button class="btn-outline">XEM NHANH</button></a>
+													<a href=""><button class="btn-warning">MUA NGAY</button></a>
+												</div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Tuyển tập 250 Câu Dễ Nhầm Lẫn</h5>
+												<p class="card-text">Some quick example text to build on the card title
+													and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary"><i class="fa fa-user"></i>350 Học
+													viên</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end-row-1-->
+						</div>
+					</div>
+					<!--end-main-content-->
+
+				</div>
+			</div>
+		</div>
+		<!--pagination-->
+		<div id="pagination">
+			<nav class="pagination">
+				<ul class="pagination justify-content-center">
+					<li class="page-item active">
+						<a class="page-link" href="#" tabindex="-1">1</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!--end-content-->
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="info">
+							<div class="col-lg-12">
+								<i class="info_footer-item fas fa-map-marker-alt"></i>
+								Tầng 5, Số 52 Chùa Hà, Quan Hoa, Cầu Giấy, Hà Nội<br>
+								<i class="info_footer-item fa fa-envelope"></i>
+								hotrokythuat.ngoaingu24h@gmail.com<br>
+								<i class="info_footer-item fa fa-phone"></i>
+								0989924488
+								<p>Công ty TNHH Giáo dục Wordington
+									MST: 0108433619 do Sở kế hoạch và đầu tư Thành phố Hà Nội cấp lần đầu ngày
+									14/09/2018
+									Địa chỉ: Tầng 5, số 52 phố Chùa Hà, Phường Quan Hoa, Quận Cầu Giấy, Thành phố Hà Nội
+								</p>
+								<div class="social">
+									<strong>Kết nối với chúng tôi</strong><a href="#"><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer-menu">
+							<div class="col-lg-12">
+								<ul class="footer_navbar">
+									<li class="footer_navbar-title"><strong>TIỆN ÍCH</strong></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Trang chủ</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Giới thiệu</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Khóa học</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="tin-tuc.html">Tin tức</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Liên hệ</a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="privacy">
+							<div class="col-lg-12">
+								<ul class="footer_navbar">
+									<li class="footer_navbar-title"><strong>CÁC CHÍNH SÁCH</strong></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Chính sách chung</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Chính sách bảo mật thông tin</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Hướng dẫn mua hàng</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Hướng dẫn kích hoạt khóa học</a></li>
+									<li class="footer_navbar-item"><a class="footer_navbar-item-link" href="">Chính sách hoàn trả học phí</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

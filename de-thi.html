@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> ngoaingu24h.vn </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="js/de-thi.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+	<link rel="stylesheet" href="style/de-thi.css">
+	<link rel="stylesheet" href="fonts/fontawesome-free-5.13.0-web/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+<!-- header -->
+<header class="header">	
+	<nav class="header_topnavbar">
+		<div class="grid">
+			<ul class="header_topnavbar-list">
+				<li class="header_topnavbar-item">
+					<a href="tel:0989924488" class="header_topnavbar-item-link">
+						<i class="fas fa-phone-alt"></i>
+						Hotline: 0989924488
+					</a>	
+				</li>
+				<li class="header_topnavbar-item">
+					<a href="mailto:hotrokythuat.ngoaingu24h@gmail.com" class="header_topnavbar-item-link">
+						<i class="fas fa-envelope"></i>
+						Email: hotrokythuat.ngoaingu24h@gmail.com
+					</a>	
+				</li>
+				<li class="header_topnavbar-item">
+					<i class="fas fa-globe"></i>
+					<span class="header_topnavbar-no-pointer">Ngôn ngữ:</span>
+				</li>
+				<li class="header_topnavbar-item">
+					<div class="dropdown dropdown-language-panel">
+						<button class="dropdown-toggle" type="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<img class=img-flag src="../khoa-hoc/images/vietnam-flag-resize.png"><span
+								class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li onclick="onChangelanguage(this,'vn')" class="vietnam active">
+								<img class="img-vn" src="../khoa-hoc/images/vietnam-flag-resize.png" alt="">
+								Tiếng Việt
+							</li>
+							<li onclick="onChangelanguage(this,'en')" class="england">
+								<img class="img-eng" src="../khoa-hoc/images/england-flag-resize.png" alt="">
+								Tiếng Anh
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul class="header_topnavbar-list">
+				<li class="header_topnavbar-item">
+					<a href="" class="header_topnavbar-item-link">Thi thử THPT</a> 
+				</li>
+				<li class="header_topnavbar-item"><i class="fas fa-shopping-cart"></i></li>
+				<li class="header_topnavbar-item signIn">
+					<i class="fas fa-user-circle"></i>
+					Đăng nhập
+				</li>
+				<li class="header_topnavbar-item">Đăng ký</li>
+			</ul>
+		</div>
+		
+	</nav>
+
+	<nav class="header_navbar">
+		<div class="grid">
+			<ul class="header_navbar-list">
+				<li class="header_navbar-item">
+					<a href=""><img src="./images/logo.PNG" alt="logo" class="header_navbar-logo"></a>
+				</li>
+				<li class="header_navbar-item">
+					<form class="form-inline">
+						<input class="header_navbar-input" type="search" placeholder="Tìm kiếm" aria-label="Search">
+						<button class="btn-search" type="submit">
+							<i class="search-icon fas fa-search"></i>
+						</button>
+					  </form>
+				</li>
+			</ul>
+			<nav class="header_subnavbar">
+				<ul class="header_subnavbar-list nav justify-content-center">
+					<li class="header_subnavbar-item nav-item">
+					  <a class="header_subnavbar-item-link" href="#">Trang chủ</a>
+					</li>
+					<li class="header_subnavbar-item">
+						<a href="" class="header_subnavbar-item-link" >Khóa học</a>
+						<div class="header_subnavbar-panel allcourse-menu">
+							<ul class="header_subnavbar-menu ">
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Luyện thi cấp tốc</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Luyện thi học sinh giỏi</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Ngữ pháp tiếng anh căn bản</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Combo luyện thi THPT</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					
+					<li class="header_subnavbar-item">
+						<a href="" class="header_subnavbar-item-link">Tin tức</a>
+						<div class="header_subnavbar-panel  news-menu">
+							<ul class="header_subnavbar-menu">
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 1</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 2</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 3</a>
+								</li>
+								<li class="header_subnavbar-menu-item">
+									<a class="header_subnavbar-menu-item-link" href="#">Tin tức 4</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="header_subnavbar-item">
+					  <a class="header_subnavbar-item-link" href="#">Liên hệ</a>
+					</li>
+					<li class="header_subnavbar-item">
+						<a class="header_subnavbar-item-link start-course" href="#">Kích hoạt khóa học</a>
+					  </li>
+				  </ul>
+			</nav>
+		</div>					
+	</nav>
+</header>
+<!--end-header-->
+
+	<!--breadcrumb-->
+	<div id="breadcrumb">
+		<div class="grid">
+			<div class="container br">	
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-item-link" href="#">Trang chủ</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-item-link" href="#">Danh mục khóa học</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-item-link" href="#">(UNLIMITED) Kho đề thi thử THPTQG từ các trường toàn quốc</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">
+							<a class="breadcrumb-item-link" href="#">Đề 3 thi thử môn Tiếng Anh THPTQG Chuyên Vinh lần 1 2019</a>
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</div>	
+	</div>
+	<!--end-breadcumb-->
+
+<!-- main-content -->
+<div id="main-content">
+	<div class="container">
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="exam">
+						<h6><strong>Câu 1-2</strong></h6>
+						<div class="question">
+							<p class="command"><strong>Mark the letter A,B,C and D on your answer sheet to indicate the sentence
+								that best completes each of the following exchanges.</strong></p>
+								<p><strong>1.</strong>Mike:"_____" Phuong: "Thanks, I will"</p>
+								<input type="radio"> A. Thank you for your help<br>
+								<input type="radio"> B. Wish you a happy journey<br>
+								<input type="radio"> C. Give my best wishes to your parents<br>
+								<input type="radio"> D. You got the first prize. Congratulations!
+								<hr>
+								<p><strong>2.</strong>Sylvia: "Do you mind if I use your dictionary".<br>Trang: Of course not,_____".</p>
+								<input type="radio"> A. Thank you for your help<br>
+								<input type="radio"> B. Wish you a happy journey<br>
+								<input type="radio"> C. Give my best wishes to your parents<br>
+								<input type="radio"> D. You got the first prize. Congratulations!
+						</div>
+					</div>
+					<div class="exam">
+						<h6><strong>Câu 3-4</strong></h6>
+						<div class="question">
+							<p class="command"><strong>Mark the letter A,B,C and D on your answer sheet to indicate the sentence
+								that best completes each of the following exchanges.</strong></p>
+								<p><strong>3.</strong>Mike:"_____" Phuong: "Thanks, I will"</p>
+								<input type="radio"> A. Thank you for your help<br>
+								<input type="radio"> B. Wish you a happy journey<br>
+								<input type="radio"> C. Give my best wishes to your parents<br>
+								<input type="radio"> D. You got the first prize. Congratulations!
+								<hr>
+								<p><strong>4.</strong>Sylvia: "Do you mind if I use your dictionary".<br>Trang: Of course not,_____".</p>
+								<input type="radio"> A. Thank you for your help<br>
+								<input type="radio"> B. Wish you a happy journey<br>
+								<input type="radio"> C. Give my best wishes to your parents<br>
+								<input type="radio"> D. You got the first prize. Congratulations!
+						</div>
+					</div>
+					<div class="exam">
+						<h6><strong>Câu 5-6</strong></h6>
+						<div class="question">
+							<p class="command"><strong>Mark the letter A,B,C and D on your answer sheet to indicate the sentence
+								that best completes each of the following exchanges.</strong></p>
+								<p><strong>5.</strong>Mike:"_____" Phuong: "Thanks, I will"</p>
+								<input type="radio"> A. Thank you for your help<br>
+								<input type="radio"> B. Wish you a happy journey<br>
+								<input type="radio"> C. Give my best wishes to your parents<br>
+								<input type="radio"> D. You got the first prize. Congratulations!
+								<hr>
+								<p><strong>6.</strong>Sylvia: "Do you mind if I use your dictionary".<br>Trang: Of course not,_____".</p>
+								<input type="radio"> A. Thank you for your help<br>
+								<input type="radio"> B. Wish you a happy journey<br>
+								<input type="radio"> C. Give my best wishes to your parents<br>
+								<input type="radio"> D. You got the first prize. Congratulations!
+						</div>
+					</div>
+						
+				</div>
+				<div class="col-lg-3">
+					<div class="answer">
+						<div class="count-down">
+							<div class="row">
+								<img src="../khoa-hoc/images/hourglass.gif" alt="">
+								<p>50m 50s</p>	
+							</div>
+						</div>
+						<div class="sub-answer">
+							<table class="table">
+								<thead>
+								  <tr>
+									<th scope="col">TT</th>
+									<th scope="col">0</th>
+									<th scope="col">0</th>
+									<th scope="col">0</th>
+									<th scope="col">0</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<th scope="row">1</th>
+									<td><button type="button">A</button></td>
+									<td><button type="button">B</button></td>
+									<td><button type="button">C</button></td>
+									<td><button type="button">D</button></td>
+								  </tr>
+								  <tr>
+									<th scope="row">2</th>
+									<td><button type="button">A</button></td>
+									<td><button type="button">B</button></td>
+									<td><button type="button">C</button></td>
+									<td><button type="button">D</button></td>
+								  </tr>
+								  <tr>
+									<th scope="row">3</th>
+									<td><button type="button">A</button></td>
+									<td><button type="button">B</button></td>
+									<td><button type="button">C</button></td>
+									<td><button type="button">D</button></td>
+								  </tr>
+								  <tr>
+									<th scope="row">4</th>
+									<td><button type="button">A</button></td>
+									<td><button type="button">B</button></td>
+									<td><button type="button">C</button></td>
+									<td><button type="button">D</button></td>
+								  </tr>
+								  <tr>
+									<th scope="row">5</th>
+									<td><button type="button">A</button></td>
+									<td><button type="button">B</button></td>
+									<td><button type="button">C</button></td>
+									<td><button type="button">D</button></td>
+								  </tr>
+								  <tr>
+									<th scope="row">6</th>
+									<td><button type="button">A</button></td>
+									<td><button type="button">B</button></td>
+									<td><button type="button">C</button></td>
+									<td><button type="button">D</button></td>
+								  </tr>
+								</tbody>
+							  </table>
+						</div>
+						<div class="btn">
+							<button class="nop-bai" type="submit">NỘP BÀI</button>
+							<button class="tam-dung">TẠM DỪNG</button>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- end-main-content -->
+
+	</div>
+	
+<!-- Modal layout -->
+<div class="modal">	
+	<div class="modal_overlay"></div>
+	<div class="modal_body">
+			<div class="auth_form">
+				<div class="form-close">
+					<i class="fas fa-times"></i>
+				</div>
+					<h3 class="auth_form-heading">Đăng nhập</h3>
+				<div class="auth_form-form">
+					<div class="auth_form-group">
+						<input type="text" class="auth_form-input" placeholder="Tên tài khoản đăng nhập (*)">
+					</div>
+					<div class="auth_form-group">
+						<input type="password" class="auth_form-input" placeholder="Mật khẩu (*)">
+					</div>
+					<div class="auth_form-forget-password">
+						<a href="" class="auth_form-forget-password-link">
+							Quên mật khẩu
+						</a>
+					</div>
+					
+					<button class="btn btn-login">Đăng nhập</button>
+					<p class="auth_form-social-login">
+						Hoặc đăng nhập bằng
+					</p>
+					<button class="btn btn-fb-login">
+						<i  class="fab fa-facebook-f fb-icon"></i>
+						Facebook
+					</button>
+					<p class="auth_form-singup">
+						Không có tài khoản? <a href="">đăng ký ngay</a>
+					</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
